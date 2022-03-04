@@ -1,0 +1,118 @@
+<div *ngIf='isDesktop; else isMobile'>
+
+    <mdb-carousel [indicators]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+        <mdb-carousel-item>
+            <div class="view w-100 carousel_image">
+                <img class="d-block w-100 h-100 " src="../../assets/img/back_header.png" alt="First slide">
+                <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+            </div>
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+            <div class="view w-100 carousel_image">
+                <img class="d-block w-100 h-100 " src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).webp"
+                    alt="Second slide">
+                <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+            </div>
+
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+            <div class="view w-100 carousel_image">
+                <img class="d-block w-100 h-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).webp"
+                    alt="Third slide">
+                <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+            </div>
+        </mdb-carousel-item>
+
+    </mdb-carousel>
+    <div class="body_intro">
+
+        <div class="header">
+
+            <div class="mark">
+                <img src="../../assets/img/camada-8.png" class="mark">
+            </div>
+            <div class="menu">
+                <div>About</div>
+                <div>Service</div>
+                <div>Project</div>
+                <div>Testimony</div>
+                <div>Community</div>
+                <div>Contact</div>
+            </div>
+        </div>
+        <div class="rabbit"> Angry Rabbit</div>
+        <div class="desc">
+            The technological and innovative solutions that your business needs
+        </div>
+        <div class="learn">Learn More</div>
+    </div>
+</div>
+
+<ng-template #isMobile>
+    <div style="">
+        <section class="top-nav" style="">
+            <div></div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu" style="">
+                <li>About</li>
+                <li>Service</li>
+                <li>Project</li>
+                <li>Testimony</li>
+                <li>Community</li>
+                <li>Contact</li>
+            </ul>
+        </section>
+
+
+        <img src="../../assets/img/camada-8.png" class="mark_mobile">
+        <div style="margin-top: -50px;">
+            <mdb-carousel [indicators]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+                <mdb-carousel-item>
+                    <div class="view w-100 carousel_image">
+
+                        <img class="d-block w-100 h-100 " src="../../assets/img/mobile_back1.png" alt="First slide">
+                        <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+                    </div>
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                    <div class="view w-100 carousel_image">
+                        <img class="d-block w-100 h-100 " src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).webp"
+                            alt="Second slide">
+                        <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+                    </div>
+
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                    <div class="view w-100 carousel_image">
+                        <img class="d-block w-100 h-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).webp"
+                            alt="Third slide">
+                        <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+                    </div>
+                </mdb-carousel-item>
+
+            </mdb-carousel>
+        </div>
+
+
+        <div class="intro_mobile">
+            <div class="rabbit_mobile"> Angry Rabbit</div>
+            <div class="desc_mobile">
+                The technological and innovative solutions that your business needs
+            </div>
+            <div class="learn_mobile">Learn More</div>
+        </div>
+
+    </div>
+    <!-- <div appParallax [ratio]="0.05" class="play_icon_mobile" uk-parallax="scale: 1, 0.5; viewport: 1; x:0, 50"></div> -->
+</ng-template>
+
+
+<div appParallax [ratio]="0.2" class="corner"></div>
+<div appParallax [ratio]="0.3" class="play_icon" uk-parallax="scale: 1, 0.5; viewport: 1; x:0, 110;"></div>
+<!-- <div appParallax [ratio]="0.12" class="play_icon_mobile" uk-parallax="scale: 1, 0.5; viewport: 1; x:0, 50"></div> -->
+<!-- <div style="margin-top: 300px;">
+    {{isDesktop ? 0.3 : ""}}
+</div> -->

@@ -1,0 +1,203 @@
+
+@import "~swiper/css";
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 480px;
+  margin: 20px auto;
+  
+}
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+
+
+.body {
+  width: 100%;
+  height: 896px;
+  background-color: #f4f4f4;
+  padding-bottom: 600px;
+  .body_portfolio {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 90px;
+    
+    // margin-top: 20px;
+    text-align: center;
+    .title {
+      // margin: 0 auto;
+      font-family: Poppins;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.43;
+      letter-spacing: 0.8px;
+      text-align: center;
+      color: #1c1b1f;
+      
+    }
+    .subtitle {
+        margin: 0 auto;
+        
+        font-family: Poppins;
+        font-size: 19px;
+        line-height: 1.47;
+        letter-spacing: 0.38px;
+        text-align: center;
+        color: #1c1b1f;
+    }
+    .carousel_body {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      .arrowPrev {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: white;
+            img {
+              margin: 16px;
+              width: 16px;
+              height: 16px;
+              transform: scaleX(-1);
+            }
+      }
+      .body_slider {
+        width: 1160px;
+        background: none;
+        // width: 60%;
+        // margin: 40px;
+        .slider {
+          width: 360px;
+          height: 480px;
+          .back {
+            border-radius: 20px;
+            width: 360px;
+            height: 480px;
+          }
+          .slider_footer {
+            position: absolute;
+            width: 90%;
+            bottom: 30px;
+            left: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .name {
+              color: white;
+              font-family: Poppins;
+              font-size: 19px;      
+            }
+            .elipse {
+              width: 48px;
+              height: 48px;
+              // margin: 0 0 0 23px;
+              border-radius: 50%;
+              background-color: white;
+              margin-left: 10px;
+              margin-top: -10px;
+              img {
+                width: 16px;
+                height: 16px;
+                margin-left: 16px;
+                margin-top: 16px;
+              }
+            } 
+          }
+        }
+      }
+      .arrowNext {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: white;
+            img {
+              margin: 16px;
+              width: 16px;
+              height: 16px;
+            }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1355px) {
+  .body{
+    .body_portfolio {
+      .carousel_body {
+        .body_slider {
+          width: 900px;
+          .slider {
+            width: 275px;
+            .slider_footer {
+              .name {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .body {
+    .body_portfolio {
+      max-width: 94%;
+      .title {
+        font-size: 30px;
+      }
+      .carousel_body {
+        .body_slider {
+          max-width: 95%;
+          .slider {
+            .slider_footer {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

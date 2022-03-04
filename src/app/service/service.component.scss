@@ -1,0 +1,328 @@
+
+@import "~swiper/css";
+@import "~swiper/css/pagination";
+
+.swiper {
+    width: 90%;
+    margin-top: 130px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.body {
+    max-width: 1920px;
+    margin: 0 auto;
+    .title {
+        height: 100px;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: 0.8px;
+        text-align: center;
+        color: #1c1b1f;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+    .service_slider {       
+        .active-true {
+            
+            border: solid 2px #eef4ff;
+            box-shadow: 0px 30px 40px 0 rgba(56, 108, 243, 0.1);
+            border-radius: 26px;
+
+        }
+        .body_service {
+            
+            display: flex;
+            margin-bottom: 50px;
+            .item {
+                border-radius: 26px;
+                width: 370px;
+                height: 460px;
+                padding: 50px 75px 88px;
+                background-color: #fff;
+                text-align: center;
+                .image {
+                    width: 100px;
+                    height: 100px;
+                    margin: 0 auto;
+                    background-color: #d8d8d8;
+                    border-radius: 50%;
+                    padding-top: 18px;
+                    img {
+                        width: 70%;
+                        height: auto;
+                        margin: 0 auto;
+                    }
+                }
+                .name {
+                    width: 206px;
+                    height: 21px;        
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.45;
+                    letter-spacing: 0.2px;
+                    text-align: center;
+                    color: #000;
+                    margin: 37px 0 37px;
+                }
+                .desc {
+                    width: 220px;
+                    height: 44px;
+                    margin-top: 37px;
+                    opacity: 0.6;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    line-height: 1.63;
+                    text-align: center;
+                    color: rgba(28, 27, 31, 0.6);
+                }
+                .learn {
+                    margin: 0 auto;
+                    margin-top: 70px;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 0.32px;
+                    text-align: center;
+                    color: #180636;
+                }
+                .btn {
+                    width: 165px;
+                    height: 52px;
+                    object-fit: contain;
+                    background-image: url('../../assets/img/btn_back.png');
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 25px;
+                    margin-top: 55px;
+                }   
+            }
+        }
+    }
+    
+    .arrow {
+        display: flex;
+        margin-left: 75%;
+        margin-top: 30px;
+        .item {
+            width: 51px;
+            height: 25px;
+            margin-right: 32px;
+        }
+    }
+    background-image: linear-gradient(to right, rgba(255,255,255,0), 90%, rgba(255,255,255,1));
+}
+
+
+.contact {
+    position: relative;
+    background-size: cover;
+    background-image: url('../../assets/img/contact_back.png') ;
+    width: 100%;
+    .body_contact {
+        max-width: 1920px;
+        margin: 0 auto;
+        height: 390px;
+        margin-top: 276px;
+        object-fit: contain;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        .desc {
+            width: 459px;
+            height: 93px;
+            font-family: Poppins;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.28;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 183px;
+            margin-left: 20%;
+        }
+        .right {
+            width: 791px;
+            height: 582px;
+            background-image: url('../../assets/img/agrupar-15.png');
+            button {
+                width: 164px;
+                height: 49px;
+                padding: 19px 52px;
+                border-radius: 14px;
+                background-color: #fff;
+                margin-top: 339px;
+                margin-left: 59px;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0.28px;
+                text-align: center;
+                color: #180636;
+            }
+        }
+    }
+}
+
+
+        .active_mobile {
+            box-shadow: 0px 15px 15px 0 rgba(56, 108, 243, 0.1);
+            border-radius: 26px;
+        }
+        
+.contact_mobile {
+    display: none;
+    position: relative;
+    background-image: url('../../assets/img/contact_back.png') ;
+    margin-top: 10px;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-wrap: nowrap;
+    object-fit: contain;
+    justify-content: space-between;
+    align-items: flex-end;
+    .left {
+        width: 40%;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 200;
+        text-align: left;
+        color: #fff;
+        margin-left: 5%;
+        button {
+            width: 120px;
+            height: 50px;
+            border-radius: 14px;
+            background-color: #fff;
+            margin-top: 20px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            color: #180636;
+        }
+        margin-bottom: 22%;
+    }
+            
+    .right {
+        width: 73%;
+        height: 130%;
+        background-image: url('../../assets/img/agrupar-15.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .body {
+        .title {
+            margin-top: 100px;
+        }
+        .service_slider {
+            .active-true {
+                box-shadow: 0px 10px 15px 0 rgba(56, 108, 243, 0.1);
+            }
+            .body_service {
+                height: 400px;
+
+                width: 90%;
+                margin: 0 auto;
+                justify-content: center;
+                margin-bottom: 200px;
+                .item {
+                    border-radius: 26px;
+                    width: 100%;
+                    height: 400px;
+                    padding: 30px;
+                    background-color: #fff;
+                    text-align: center;
+                    .image {
+                        width: 100px;
+                        height: 100px;
+                        margin: 0 auto;
+                        background-color: #d8d8d8;
+                        border-radius: 50%;
+                        padding-top: 18px;
+                        img {
+                            width: 70%;
+                            height: auto;
+                        }
+                    }
+                    .name {
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 1.45;
+                        letter-spacing: 0.2px;
+                        text-align: center;
+                        color: #000;
+                        margin: 0 auto;
+                        margin-top: 30px;
+                    }
+                    .desc {
+                        margin: 0 auto;
+                        margin-top: 30px;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        line-height: 1.63;
+                        text-align: center;
+                        color: rgba(28, 27, 31, 0.6);
+                    }
+                    .learn {
+                        margin: 0 auto;
+                        margin-top: 70px;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 600;
+                        letter-spacing: 0.32px;
+                        text-align: center;
+                        color: #180636;
+                    }
+                    .btn {
+                        width: 165px;
+                        height: 52px;
+                        object-fit: contain;
+                        background-image: url('../../assets/img/btn_back.png');
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 25px;
+                        margin-top: 55px;
+                    }   
+                }
+            }
+        }
+    }
+}

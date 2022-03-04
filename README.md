@@ -1,1 +1,2 @@
-# Angry-Rabbit
+# angry-rabbit
+Angry Rabbit

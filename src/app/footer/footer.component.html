@@ -1,0 +1,55 @@
+<div *ngIf='isDesktop; else isMobile'>
+    <div class="body">
+        <div class="body_footer">
+            <div class="left">
+                <img src="../../assets/img/camada-8.png" />
+            </div>
+            <div class="center">
+                <p class="label">Contact</p>
+                <p class="email">Email: inbox@angrybirdstudio.com</p>
+                <!-- <hr style="color: white;" /> -->
+            </div>
+            <div class="right">
+                <p class="font">Subscribe</p>
+                <input type="text" placeholder="Your Email" class="email" />
+
+                <p class="font">Follow Us</p>
+                <div class="icons">
+                    <i class="fab fa-facebook-square icon"></i>
+                    <i class="fab fa-twitter-square icon"></i>
+                    <i class="fab fa-instagram icon"></i>
+                    <i class="fab fa-youtube-square icon"></i>
+                    <i class="fab fa-twitch icon "></i>
+                    <i class="fab fa-tiktok icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #isMobile>
+    <div class="mobile">
+        <div class="body">
+            <div class="body_footer">
+                <div class="left">
+                    <img src="../../assets/img/camada-8.png" />
+                </div>
+                <div style="margin-top: 20px;">Contact</div>
+                <div style="margin-top: 7px;">Email: inbox@angrybirdstudio.com</div>
+                <div class="right" style="margin-top: 20px;">
+                    <div class="font">Subscribe</div>
+                    <input type="text" placeholder="Your Email" class="email" />
+
+                    <div class="font">Follow Us</div>
+                    <div class="icons">
+                        <i class="fab fa-facebook-square icon"></i>
+                        <i class="fab fa-twitter-square icon"></i>
+                        <i class="fab fa-instagram icon"></i>
+                        <i class="fab fa-youtube-square icon"></i>
+                        <i class="fab fa-twitch icon "></i>
+                        <i class="fab fa-tiktok icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

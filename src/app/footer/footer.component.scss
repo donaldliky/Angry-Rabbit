@@ -1,0 +1,142 @@
+.body {
+    width: 100%;
+    height: 364px;
+    background-color: black;
+    .body_footer {
+        margin: 0 auto;
+        margin-top: 180px;
+        padding: 86px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        max-width: 1920px;
+        .left {
+            width: 300px;
+            height: 133px;
+            margin-left: 3%;
+            margin-right: 5%;
+            object-fit: contain;
+        }
+        .center {
+            .label {
+                width: 74px;
+                height: 14px;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: left;
+                color: #fff;
+            }
+            .email {
+                margin-top: 27px;
+                width: 260px;
+                font-family: Poppins;
+                font-size: 14px;
+                text-align: left;
+                color: white;
+                border-bottom: 2px solid white;
+            }
+        }
+        .right {
+            width: auto;
+            margin-left: 8%;
+            .font {
+                height: 14px;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: left;
+                color: #fff;
+            }
+            .email {
+                width: 282px;
+                height: 41px;
+                margin-top: 23px;
+                border-radius: 8px;
+                background: #cbcbcb url('../../assets/img/icon_send.png') right no-repeat;
+                padding: 20px;
+                
+            }
+        }
+        .icons {
+            margin-top: 21px;
+            display: flex;
+            align-items: center;
+            .icon {
+                margin-right: 22px;
+                width: 21px;
+                height: 20px;
+                color: white;
+                font-size: 30px;
+            }
+            .icon:hover {
+                color: gray;
+            }
+        }
+    }
+}
+.mobile {
+    .body {
+        width: 100%;
+        height: 550px;
+        background-color: black;
+        .body_footer {
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            max-width: 768px;
+            width: 90%;
+            div {
+                font-family: Poppins;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #fff;
+                    text-align: left;
+            }
+            .left {
+                width: 100%;
+                height: 110px;
+                margin-left: 0;
+                object-fit: contain;
+                img {
+                    width: 60%;
+                }
+                margin-top: 30px;
+            }
+            .right {
+                
+                margin-left: 0;
+                width: 100%;
+                .font {
+                    margin-top: 20px;
+                }
+                .email {
+                    width: 100%;
+                    height: 41px;
+                    border-radius: 8px;
+                    background: #cbcbcb url('../../assets/img/icon_send.png') right no-repeat;
+                    padding: 20px;
+                }
+            }
+            .icons {
+
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                .icon {
+                    font-family:  Awesome 5 Free;
+                    margin-right: 18px;
+                    width: 21px;
+                    height: 20px;
+                    color: white;    
+                }
+                .icon:hover {
+                color: gray;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,206 @@
+<div *ngIf='isDesktop; else isMobile'>
+    <div class="body">
+        <p class="title"> Solution and service<br />
+            for your company</p>
+        <div class="service_slider">
+            <!-- This div tag is for gradient to slide -->
+            <div style="width: 22%;height: 130px;position: relative; margin-right: 0;float: right;">
+                <div
+                    style="width: 100%;height: 600px;position: absolute;
+                        z-index: 5;background-image: linear-gradient(to right, rgba(255,255,255,0),30%, rgba(255,255,255,1));">
+                </div>
+            </div>
+            <swiper #swiper [slidesPerView]="4" [loop]="true" [spaceBetween]="30" class="mySwiper" [grabCursor]="true"
+                [centeredSlides]="false" [initialSlide]="0">
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isNext ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon1.png" /></div>
+                            <div class="name">Game Development</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn {{data.isNext ? 'btn': ''}}">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isNext ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon2.png" /></div>
+                            <div class="name">Website</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn {{data.isNext ? 'btn': ''}}">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isNext ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon3.png" /></div>
+                            <div class="name">Aplication for web</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn {{data.isNext ? 'btn': ''}}">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isNext ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon2.png" /></div>
+                            <div class="name">NFT</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn {{data.isNext ? 'btn': ''}}">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isNext ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon1.png" /></div>
+                            <div class="name">Game Development</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn {{data.isNext ? 'btn': ''}}">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isNext ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon2.png" /></div>
+                            <div class="name">Website</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn {{data.isNext ? 'btn': ''}}">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isNext ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon3.png" /></div>
+                            <div class="name">Aplication for web</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn {{data.isNext ? 'btn': ''}}">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isNext ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon2.png" /></div>
+                            <div class="name">NFT</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn {{data.isNext ? 'btn': ''}}">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+
+            </swiper>
+
+        </div>
+
+        <div class="arrow">
+            <div class="item" (click)="slidePrev()"><img src="../../assets/img/camada-21-copiar.png" /></div>
+            <div class="item" (click)="slideNext()"><img src="../../assets/img/camada-21.png" /></div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="body_contact">
+            <div class="desc">The best phase of your company starts now</div>
+            <div class="right">
+                <button>Contact</button>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #isMobile>
+    <div class="body" style="max-width: 95%;">
+        <p class="title"> Solution and service
+            for your company</p>
+        <div class="service_slider">
+            <swiper #swiper [slidesPerView]="1" [loop]="true" [spaceBetween]="30" class="mySwiper" [grabCursor]="true"
+                [centeredSlides]="false" [initialSlide]="0" style="">
+                <ng-template swiperSlide let-data>
+                    <div class="body_service active-true">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon1.png" /></div>
+                            <div class="name">Game Development</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn btn">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isActive ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon2.png" /></div>
+                            <div class="name">Website</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn btn">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isActive ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon3.png" /></div>
+                            <div class="name">Aplication for web</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn btn">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template swiperSlide let-data>
+                    <div class="body_service {{data.isActive ? 'active-true' : ''}} ">
+                        <div class="item">
+                            <div class="image"><img src="../../assets/img/service_icon2.png" /></div>
+                            <div class="name">NFT</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                            </div>
+                            <div class="learn btn">Learn more</div>
+                        </div>
+                    </div>
+                </ng-template>
+
+            </swiper>
+        </div>
+    </div>
+    <div class="contact_mobile">
+        <div class="left">
+            The best phase of your company starts now<br />
+            <button>Contact</button>
+        </div>
+
+        <div class="right">
+
+        </div>
+        <!-- <div class="body_contact">
+            <div class="desc">The best phase of your company starts now</div>
+            <div class="right">
+                <button>Contact</button>
+            </div>
+        </div> -->
+    </div>
+</ng-template>

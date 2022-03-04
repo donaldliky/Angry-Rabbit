@@ -1,0 +1,47 @@
+<div *ngIf='isDesktop; else isMobile'>
+    <div class="body_about">
+        <p class="title">What Customers<br /> Say About Us</p>
+        <swiper [slidesPerView]="3" [spaceBetween]="30" [loop]="true" class="mySwiper" [grabCursor]="true"
+            [centeredSlides]="true" [navigation]="true" [initialSlide]="1" (swiper)="onSwiper($event)"
+            (slideChange)="onSlideChange($event)">
+            <ng-template swiperSlide let-data *ngFor="let i of loopNumber; index as j">
+                <div class="body_carousel {{data.isActive ? 'active_one' : 'unactive_one'}}
+                    {{ data.isPrev ? 'gradientToLeft' : 'gradientToRight' }} ">
+                    <img class="photo" src="../../assets/img/photo_man.png" gradient="" />
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisc lorem elit.faucibus cras donec consequatsw
+                    </p>
+                    <p class="name">
+                        Rodrigo Moura
+                    </p>
+                    <p class="job">
+                        Businessman
+                    </p>
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+</div>
+<ng-template #isMobile>
+    <div class="body_about">
+        <p class="title">What Customers Say<br /> About Us</p>
+        <swiper [slidesPerView]="1" [spaceBetween]="30" [loop]="true" class="mySwiper" [grabCursor]="true"
+            [centeredSlides]="true" [navigation]="true" [initialSlide]="1" (swiper)="onSwiper($event)"
+            (slideChange)="onSlideChange($event)" style="width: 100%;">
+            <ng-template swiperSlide let-data *ngFor="let i of loopNumber; index as j">
+                <div class="body_carousel active_one ">
+                    <img class="photo" src="../../assets/img/photo_man.png" gradient="" />
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisc lorem elit.faucibus cras donec consequatsw
+                    </p>
+                    <p class="name">
+                        Rodrigo Moura
+                    </p>
+                    <p class="job">
+                        Businessman
+                    </p>
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+</ng-template>
